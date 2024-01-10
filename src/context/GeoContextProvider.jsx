@@ -19,9 +19,9 @@ const GeoContextProvider = ({ children }) => {
   const fetchUserGeoData = async () => {
     try {
       const { data } = await axios.get(
-        "https://geo.ipify.org/api/v2/country,city?apiKey=at_KytuHVK0Ck81MamC7QulthtTa2wvW",
+        "https://geo.ipify.org/api/v2/country,city?apiKey=at_NiwhD18s4wgOG5E6RcwAmKHppxhEY",
       );
-      setIpAddress(data.ip)
+      setIpAddress(data.ip);
       setIpData(data);
       const { lat, lng } = await data.location;
       console.log(lat, lng);
@@ -41,7 +41,7 @@ const GeoContextProvider = ({ children }) => {
     try {
       console.log(ipAddress, validIpAddress);
       if (trimmedIpAddress && (validIP || validDomain)) {
-        const URL = `https://geo.ipify.org/api/v2/country,city?apiKey=at_KytuHVK0Ck81MamC7QulthtTa2wvW&ipAddress=${trimmedIpAddress}`;
+        const URL = `https://geo.ipify.org/api/v2/country,city?apiKey=at_NiwhD18s4wgOG5E6RcwAmKHppxhEY&ipAddress=${trimmedIpAddress}`;
         const { data } = await axios.get(URL);
         setIpData(data);
         const { lat, lng } = await data.location;

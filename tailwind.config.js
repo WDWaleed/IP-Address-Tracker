@@ -8,13 +8,13 @@ export default {
         DesktopPattern: "url('/assets/pattern-bg-desktop.png')",
       },
       colors: {
-        DarkGray: "hsl(0, 0%, 59%)",
+        DarkGray: "hsl(0, 0%, 40%)",
         VeryDarkGray: "hsl(0, 0%, 17%)",
         TxtColor: "#fff",
       },
       screens: {
-        "customLG": "1174px"
-      }
+        customLG: "1174px",
+      },
     },
   },
   plugins: [],

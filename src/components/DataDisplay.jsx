@@ -28,7 +28,7 @@ const DataDisplay = () => {
     },
   ];
   return (
-    <div className="absolute inset-x-8 bottom-0 translate-y-1/2 transform z-[100] flex justify-center">
+    <div className="absolute inset-x-8 bottom-0 z-[100] flex translate-y-1/2 transform justify-center">
       <div className="flex min-h-[160px] w-full max-w-[1110px] flex-col flex-wrap items-center justify-between gap-6 rounded-2xl bg-white p-4 drop-shadow-2xl  sm:flex-row sm:items-start sm:gap-0 sm:p-8">
         {displayData.map((item) => (
           <div
